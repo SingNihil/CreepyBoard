@@ -30,6 +30,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
+    'creepy_web_platform',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -47,6 +48,9 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'content', 'media')
+MEDIA_URL = '/media/'
 
 ROOT_URLCONF = 'CreepyBoard.urls'
 
